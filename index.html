@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- the following line is to help make the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-------- HEADER SECTION --------->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="ressources/eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- onclick is for javascript (to make menu hide and show) -->
+                <ion-icon class="close-icon" name="close-outline" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTENT</a></li>
+                </ul>
+            </div>
+            <ion-icon class="menu-icon" name="menu-outline" onclick="showMenu()"></ion-icon>
+        </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>An institution of higher education and research which awards academic degrees <br> in several academic disciplines.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!-------- COURSE SECTION --------->
+    <section class="course">
+        <h1> Course We Offer </h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p class="col-paragraph">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p class="col-paragraph">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p class="col-paragraph">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------- CAMPUS SECTION --------->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p class="paragraph">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, labore et dolore  voluptatem.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="ressources/eduford_img/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="ressources/eduford_img/newyork.jpeg">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="ressources/eduford_img/washington.jpeg">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------- FACILITIES SECTION --------->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="ressources/eduford_img/library.jpeg">
+                <h3>World Class Library</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="ressources/eduford_img/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="ressources/eduford_img/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- javascript for menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    <!-- javascript for menu -->
+
+</body>
+</html>

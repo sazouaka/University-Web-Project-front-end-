@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ---------------------- */
+/*         HEADER         */
+/* ---------------------- */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(ressources/eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* ---------------------- */
+/*         NAVBAR         */
+/* ---------------------- */
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block; /* as a one horizontal line */
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: tomato;
+    display: block;
+    margin: auto;
+    transition:  0.5s;
+}
+
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+
+/* ---------------------- */
+/*         TEXTBOX        */
+/* ---------------------- */
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* to make it in the center of the div */
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 50px;
+}
+
+.text-box p {
+    font-size: 14px;
+    margin: 10px 0 40px;
+
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 13px;
+    padding: 14px 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero-btn:hover {
+    background: tomato;
+    border: 1px solid tomato;
+    transition: 0.7s;
+}
+
+.close-icon, .menu-icon {
+    display: none;
+}
+
+/* ------------------------ */
+/* MEDIAQUERY OF the header */
+/* ------------------------ */
+
+/* to make the header section responsive */
+
+    @media(max-width: 700px) {
+    
+    .text-box h1 {
+        font-size: 30px;
+    }
+    
+    .text-box p {
+        font-size: 10px;
+    }
+
+    .hero-btn {
+        font-size: 10px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: tomato;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2; /* how the elements of nav links should be shown */
+        transition: 1s;
+    }
+
+    .close-icon, .menu-icon {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 20px;
+    }
+}
+
+/* ---------------------- */
+/*         COURSE         */
+/* ---------------------- */
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.paragraph,
+.col-paragraph  {
+    color: rgb(88, 87, 87);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 25px;
+}
+
+.col-paragraph {
+    text-align: justify;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex; /* to make all the div inside this row into column */
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: rgba(255, 99, 71, 0.061);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-family: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------- */
+/* MEDIAQUERY OF the course section */
+/* -------------------------------- */
+
+@media(max-width: 700px){
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* ---------------------- */
+/*         CAMPUS         */
+/* ---------------------- */
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    height: 100%;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(4, 9, 30, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 300;
+    color: white;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 45%;
+    opacity: 1;
+}
+
+/* ---------------------- */
+/*       FACILITIES       */
+/* ---------------------- */
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+.facilities-col p{
+    padding: 0;
+}
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+}
