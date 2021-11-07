@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- the following line is to help make the webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-------- HEADER SECTION --------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="ressources/eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- onclick is for javascript (to make menu hide and show) -->
+                <ion-icon class="close-icon" name="close-outline" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTENT</a></li>
+                </ul>
+            </div>
+            <ion-icon class="menu-icon" name="menu-outline" onclick="showMenu()"></ion-icon>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-------- BLOG CONTENT SECTION --------->
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="ressources/eduford_img/certificate.jpg">
+                <h2>Certificate & Online Programs For 2021</h2>
+                <p class="paragraph">National and international certificates are the evidence of the university verifiable quality standards for education.
+                    In many other countries, certificates are qualifications in higher education.
+                    For example, in the Republic of Ireland, the National Certificate, which was replaced in 2006 by the Graduate Certificate (at an undergraduate level,
+                    .<br><br>National and international certificates are the evidence of the university verifiable quality standards for education.
+                    In many other countries, certificates are qualifications in higher education.
+                    For example, in the Republic of Ireland, the National Certificate, which was replaced in 2006 by the "Higher Certificate".
+                    These have the titles Certificate (at an undergraduate level), Graduate Certificate (at an undergraduate level,
+                    but requiring the completion of a prior undergraduate degree for admission).<br><br>National and international certificates are the evidence of the university verifiable quality standards for education.
+                    In many other countries, certificates are qualifications in higher education.
+                    For example, in the Republic of Ireland, the National Certificate, which was replaced in 2006 by the "Higher Certificate".
+                    These have the titles Certificate (at an undergraduate level).<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea row="5" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn-2">Post Comment</button>
+                        </form>
+                    </div>
+            </div>
+            <div class="blog-right">
+                <h3> Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Modern Art</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Earth science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Journalism Studies</span>
+                    <span>34</span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------- FOOTER SECTION --------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="icons">
+            <i><ion-icon class="social-icon" name="logo-facebook"></ion-icon></i>
+            <i><ion-icon class="social-icon" name="logo-twitter"></ion-icon></i>
+            <i><ion-icon class="social-icon" name="logo-instagram"></ion-icon></i>
+            <i><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></i>
+        </div>
+        <p>Made With <i><ion-icon class="heart-icon" name="heart-outline"></ion-icon></i> By SAMSAM</p>
+    </section>
+
+
+
+    <!-- javascript for menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    <!-- javascript for menu -->
+
+</body>
+</html>
