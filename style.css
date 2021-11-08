@@ -184,7 +184,7 @@ nav img {
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         background: tomato;
         height: 100vh;
         width: 150px;
@@ -680,10 +680,10 @@ h3 {
 /* ----------------- */
 
 .sub-header {
-    height: 500px;
+    height: 600px;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(ressources/eduford_img/background.jpg);
-    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(ressources/eduford_img/background.jpeg);
+    background-position: bottom;
     background-size: cover;
     text-align: center;
     color: #fff;
@@ -754,9 +754,9 @@ h3 {
     color: white;
 }
 
-/* -------------------------------- */
+/* ---------------------------------- */
 /* MEDIAQUERY OF the about-us section */
-/* -------------------------------- */
+/* ---------------------------------- */
 
 @media(max-width: 700px){
     .red-btn {
@@ -862,4 +862,70 @@ h3 {
     .blog-left h2 {
         font-size: 18px;
     }
+}
+
+/* ------------------- */
+/*      contact us     */
+/* ------------------- */
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    position: relative;
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.contact-col span {
+    margin-left: 50px;
+}
+
+.contact-col h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: rgb(49, 49, 49);
+    font-weight: 400;
+    padding: 0;
+}
+
+.contact-col p {
+    color: rgb(129, 128, 128);
+    font-size: 15px;
+    padding: 0;
+}
+
+.contact-icon {
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    color: tomato;
+    margin-right: 30px;
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid rgba(163, 167, 199, 0.103);
+    box-sizing: border-box;
 }
